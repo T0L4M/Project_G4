@@ -1,0 +1,129 @@
+<header style="position: relative">
+	<div
+		id="banner-contact"
+		style="
+			background-image: url(https://khachsandanang.shop/uploads/images/images/tro-choi-ngoai-troi-vinwonder-nha-trang.jpg);
+		"
+	></div>
+	<div class="banner-wrapper">
+		<h3 class="display-3">Contact Us</h3>
+	</div>
+</header>
+
+<div class="contact">
+	<div class="container">
+		<div class="tittle text-center">
+			<h5 class="display-5 c2">Contact For Any Question</h5>
+		</div>
+		<div class="row contact-information">
+			<div class="col-md-4">
+				<div class="contact-info">
+					<div class="contact-icon" style="background-color: rgb(238, 160, 14)">
+						<i class="fa fa-map-marker-alt"></i>
+					</div>
+					<div class="contact-text">
+						<h3>Address</h3>
+						<p>
+							391A Nam Ky Khoi Nghia Street, District 3, Ho Chi Minh
+							City
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="contact-info">
+					<div class="contact-icon" style="background-color: palevioletred">
+						<i class="fa fa-phone-alt"></i>
+					</div>
+					<div class="contact-text">
+						<h3>Hotline</h3>
+						<p>+84 12345678</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="contact-info">
+					<div class="contact-icon" style="background-color: rgb(0, 122, 209)">
+						<i class="fa fa-envelope"></i>
+					</div>
+					<div class="contact-text">
+						<h3>Email Us</h3>
+						<p>Group4@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row contact-form">
+			<div class="col-md-6">
+				<form
+					name="sentMessage"
+					id="contactForm"
+					onsubmit="alert('Your message has been sent. Thank you for contacting us, we will get back to you as soon as possible.')"
+				>
+					<div class="control-group">
+						<input
+							type="text"
+							class="form-control"
+							id="username"
+							placeholder="Your Name"
+							required
+						/>
+					</div>
+					<br />
+
+					<div class="control-group">
+						<input
+							type="email"
+							class="form-control"
+							id="email"
+							pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]{1,}\.[a-zA-z]{2,3}"
+							placeholder="Your Email (Example: group4@gmail.com)"
+							required
+						/>
+					</div>
+					<br />
+					<div class="control-group">
+						<input
+							type="tel"
+							class="form-control"
+							id="phone"
+							placeholder="Phone"
+							required
+						/>
+					</div>
+					<br />
+					<div class="control-group">
+						<textarea
+							class="form-control"
+							id="message"
+							placeholder="Message"
+							required
+						></textarea>
+					</div>
+
+					<button
+						class="btn my-4"
+						type="submit"
+						id="sendMessageButton"
+						onclick="send()"
+						style="
+							background-color: cornflowerblue;
+							font-family: 'Luckiest Guy', cursive;
+							color: white;
+						"
+					>
+						Send Message
+					</button>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2731.6117215525105!2d106.6821689717832!3d10.790458442971875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d4a7c59c09%3A0x8e2f7cbc924be1db!2zMzkxYSDEkC4gTmFtIEvhu7MgS2jhu59pIE5naMSpYSwgUGjGsOG7nW5nIDE0LCBRdeG6rW4gMywgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1675224096445!5m2!1svi!2s"
+					allowfullscreen=""
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+			</div>
+		</div>
+	</div>
+</div>

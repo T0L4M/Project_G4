@@ -1,0 +1,32 @@
+{
+	"tickets": [
+		{
+			"id": 0,
+			"name": "Keansburg Amusement Park 50 Ticket Sheet",
+			"description": "*Price includes NJ Sales Tax. $6.95 shipping & handling. Allow 10 day for delivery.",
+			"price": 45.0,
+			"image": "images/50ticket.png"
+		},
+		{
+			"id": 1,
+			"name": "Runaway Rapids - 3 Hour Admission",
+			"description": "*Limit of 25 tickets per order. $6.95 shipping & handling. Allow 10 day for delivery.",
+			"price": 37.0,
+			"image": "images/runawayticket.png"
+		},
+		{
+			"id": 2,
+			"name": "Keansburg Amusement Park 100 Ticket book",
+			"description": "*Price includes NJ Sales Tax. $6.95 shipping & handling. Allow 10 day for delivery.",
+			"price": 79.0,
+			"image": "images/100ticketbook.png"
+		},
+		{
+			"id": 3,
+			"name": "Keansburg Amusement Park 200 Ticket book",
+			"description": "*Price includes NJ Sales Tax. $6.95 shipping & handling. Allow 10 day for delivery.",
+			"price": 149.0,
+			"image": "images/200ticketbook.png"
+		}
+	]
+}

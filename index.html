@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>	
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oregano&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		
+		<!-- AOS -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+		<!-- Icon -->
+		<script
+			src="https://kit.fontawesome.com/0819f81b05.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Owl Carousel -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+			integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+			integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+			crossorigin="anonymous"
+		/>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+
+		
+		<script src="code.js"></script>
+		<link rel="stylesheet" href="css.css" />
+		<title>Keansburg Park | Keansburg Park</title>
+	</head>
+
+	<body ng-app="myAPP" ng-controller="conIndex">
+		<button type="button" class="btn-scroll-up btn" title="Go to top!" scrollable ng-click="backToTop()"><i class="	fas fa-arrow-circle-up"></i></button>
+
+		<!-- HEADER -->
+		<header>
+			<!-- Nav MENU -->
+			
+				<nav class="navbar navbar-expand-lg" style="background-image: linear-gradient(#FFB7C5, white);">
+					<div class="container-fluid">
+						<a class="navbar-brand fs-3 lego-brand" href="#/!" 
+							>Keansburg Park</a>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#main_nav"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="main_nav">
+							<ul class="navbar-nav">
+								<!-- 1st -->
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										>Rides & Attractions</a
+									>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item" href="#!park"
+												>Keansburg Amusement Park</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#!runaway"
+												>Runaway Rapids</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#!gokarts"
+												>Go Karts</a
+											>
+										</li>
+									</ul>
+								</li>
+								<!-- 2nd -->
+								<li class="nav-item">
+									<a class="nav-link" href="#!discounts">Ticket</a>
+								</li>
+								<!-- 3rd -->
+								<li class="nav-item">
+									<a class="nav-link" href="#!services">Services</a>
+								</li>
+								<!-- 4th -->
+								<li class="nav-item">
+									<a class="nav-link" href="#!abus">About Us</a>
+								</li>
+								<!-- 5th -->
+								<li class="nav-item">
+									<a class="nav-link" href="#!contact">Contact Us</a>
+								</li>
+								<!-- 6th -->
+								<li class="nav-item">
+									<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal"
+										>Sign in/ Sign up</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="" data-bs-toggle="offcanvas" data-bs-target="#cart"> Cart</a>
+								</li>
+								<li class="nav-item d-none d-xxl-block">
+									<a href="" id="toastView"><i class="fas fa-users fs-5 text-dark" style="vertical-align: bottom;"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>	
+				</nav>
+				<div class="toast float-end" style="width: fit-content;">
+					<div class="toast-header">
+					  <strong class="me-auto">Visitors Stat</strong>
+					  <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+					</div>
+					<div class="toast-body">
+					  <p>Today's visitors: <script>document.write(localStorage.getItem("visits"));</script></p>
+					</div>
+				    </div>
+		</header>
+		<div class="container-fluid d-none d-xxl-block"> 
+			<marquee behavior="slide" direction="" scrollamount="40">
+				&nbsp; &nbsp;&nbsp;
+				<img src="https://keansburgamusementpark.com/wp-content/uploads/2015/02/kap_logo.png" alt="">
+				<h5 class="display-5 d-inline-block mq-text"> &nbsp;&nbsp;&nbsp; WELCOME TO THE KEANSBURG PARK&nbsp;</h5>
+				<img src="https://keansburgamusementpark.com/wp-content/uploads/2015/03/RR_logo_withGlow3.png" alt="" style="display: inline-block; width: 20%;">
+			</marquee>
+		</div>
+		<section style="background-image: linear-gradient(white, #DBF3FA,#B7E9F7,#92DFF3,#7AD7F0,#92DFF3,#DBF3FA,#DBF3FA, white);" ng-view></section>
+
+		<!-- CART -->
+<div class="offcanvas offcanvas-end " id="cart" ng-controller="cartCTRL">
+					<div class="offcanvas-header">
+						<h1 class="offcanvas-title" style="font-family: Luckiest Guy;">Cart</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="offcanvas"
+						></button>
+					</div>
+					<div class="offcanvas-body">
+						<div class="panel-body table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+                  						<th>Name</th>
+                  						<th>Price</th>
+		      						<th>Quantity</th>
+		      						<th>Amount</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="c in cart">
+										<td>{{c.name}}</td>	
+										<td>{{c.price|currency}}</td>
+										<td>{{c.qty}}</td>
+                								<td>{{c.price * c.qty|currency}}</td>
+									</tr>
+									<tr>
+										<th colspan="3">Total Amount: </th>
+										<td style="font-weight: bold;">{{total |currency}}</td>							  
+									</tr>
+									<tr>
+										<td colspan="5" style="text-align: right">
+										    <input type="button" class="btn btn-danger" style="width: 120px;" value="Remove All"
+											  ng-click="removeAll()">
+										    <input type="button" class="btn btn-info" style="width: 100px;" value="Checkout"
+											  ng-click="checkout()">
+										</td>
+									  </tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+<!-- SIGN -->
+				<!-- The Modal -->
+<div class="modal fade" id="myModal">
+	<div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+	<div class="modal-content">
+
+	<!-- Modal Header -->
+	<div class="modal-header">
+		<h4 class="modal-title">WELCOME, THERE</h4>
+		<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+	</div>
+
+	<!-- Modal body -->
+	<div class="modal-body">
+				<div class="signpage">
+					<div class="container signContainer" id="container">
+						<div class="form-container sign-up-container">
+							<form class="sign-form" action="#">
+								<h1 class="fw-bold m-0" style="font-family:Luckiest Guy">Create Account</h1>
+								<div class="social-container">
+									<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+									<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+									<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+								</div>
+								<span>or use your email for registration</span>
+								<input class="sign-input" type="text" placeholder="Name" required />
+								<input class="sign-input" type="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+								<input class="sign-input" type="password" placeholder="Password" required />
+								<button>Sign Up</button>
+							</form>
+						</div>
+						<div class="form-container sign-in-container">
+							<form class="sign-form" action="#">
+								<h1 class="fw-bold m-0" style="font-family:Luckiest Guy">Sign in</h1>
+								<div class="social-container">
+									<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+									<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+									<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+								</div>
+								<span>or use your account</span>
+								<input class="sign-input" type="email" placeholder="Email" required />
+								<input class="sign-input" type="password" placeholder="Password" required />
+								<a class="forgot" href="#">Forgot your password?</a>
+								<button>Sign In</button>
+							</form>
+						</div>
+						<div class="overlay-container">
+							<div class="overlay">
+								<div class="overlay-panel overlay-left">
+									<h1 class="fw-bold m-0">Welcome Back!</h1>
+									<p class="overlay-content">
+										To keep connected with us please login with your personal info
+									</p>
+									<button class="ghost" id="signIn">Sign In</button>
+								</div>
+								<div class="overlay-panel overlay-right">
+									<h1 class="fw-bold m-0">Hello, Friend!</h1>
+									<p class="overlay-content">
+										Enter your personal details and start journey with us
+									</p>
+									<button class="ghost" id="signUp">Sign Up</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>    
+	</div>
+	</div>
+</div>
+
+		<!-- FOOTER -->
+		<footer><div class="content-footer container-fluid">
+				<div class="row">
+					<div class="col-md-4 footer-label">
+						<h3 style="font-family: 'Luckiest Guy',cursive;">Planning Your Trip</h3>
+						<div class="footer-list">
+							<a href="#!services">Park Map</a><br>
+							<a href="#!ticket">Tickets</a>
+							<p>&nbsp;</p>
+						</div>
+						<h3 style="font-family: 'Luckiest Guy',cursive;">About Us</h3>
+						<div class="footer-list">
+							<a href="#!abus">Partners</a> 
+						</div>
+					</div>
+					<div class="col-md-4 footer-label">
+						<h3 style="font-family: 'Luckiest Guy',cursive;">Find Us</h3>
+						<div class="footer-list">
+							<a
+								href="https://www.google.com/maps/place/FPT+Polytechnic+HCM/@10.7901085,106.6815309,837m/data=!3m1!1e3!4m13!1m7!3m6!1s0x317528d33549cc91:0xb24c365a1b8651ac!2zMzkxIMSQLiBOYW0gS-G7syBLaOG7n2kgTmdoxKlhLCBQaMaw4budbmcgOCwgUXXhuq1uIDMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!3b1!8m2!3d10.7901085!4d106.6837196!3m4!1s0x317528d35939c66f:0xe52e3ed732b15272!8m2!3d10.7907672!4d106.6818383?hl=en" target="_blank"
+								>Google Maps</a
+							>
+							<p>&nbsp;</p> <br>
+						</div>
+						<h3 style="font-family: 'Luckiest Guy',cursive;">Help &amp; Support</h3>
+						<div class="footer-list">
+							<a href="#!contact">Contact Us</a>
+						</div>
+					</div>
+					<div class="col-md-4 footer-label">
+						<h3 style="font-family: 'Luckiest Guy',cursive;">Connect With Us</h3>
+						<div class="footer-list">
+							<ul style="padding: 0;">
+								<li class="d-inline-block">
+									<a
+										rel="noopener"
+										href="https://www.facebook.com/"
+										target="_blank"
+										aria-label="Facebook Link"
+										><span class="fab fa-facebook hello">
+										</span
+									></a>
+								</li>
+								<li class="d-inline-block">
+									<a
+										rel="noopener"
+										href="https://www.twitter.com/"
+										target="_blank"
+										aria-label="Twitter Link"
+										><span class="fab fa-twitter hello">
+										</span
+									></a>
+								</li>
+								<li class="d-inline-block">
+									<a
+										rel="noopener"
+										href="https://www.instagram.com/"
+										target="_blank"
+										aria-label="Instagram Link"
+										><span class="fab fa-instagram hello">
+										</span
+									></a>
+								</li>
+								<li class="d-inline-block">
+									<a
+										rel="noopener"
+										href="https://www.youtube.com/"
+										target="_blank"
+										aria-label="Youtube Link"
+										><span
+											class="fab fa-youtube hello"
+										>
+										</span
+									></a>
+								</li>
+							</ul>
+						</div>
+						<p style="font-family: 'Luckiest Guy',cursive; font-size: 3em;">Keansburg Park</p>
+						<p>
+							391A, Nam Ky Khoi Nghia Street, <br />
+							District 3, Ho Chi Minh City
+						</p>
+					</div>
+				</div>
+		<div class="global-footer">
+				<div class="row">
+					<div class="col-md-4">
+						<img
+							src=""
+							alt=""
+							class="footer-logo"
+						/>
+					</div>
+					<div class="col-md-4" style="padding-top: 22px">
+						&copy; 2023 All Rights Reserved
+					</div>
+					<div class="col-md-4" style="padding-top: 15px">
+						<ul class="nav justify-content-end">
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link"
+									>Terms of Use</a
+								>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link"
+									>Privacy</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div></footer>
+
+	<!-- AOS -->
+	<script>
+		AOS.init({
+		    duration: 3000,
+		    once: true,
+		});
+	  </script>
+	  <!-- SIGN -->
+	  <script>
+		const signUpButton = document.getElementById("signUp");
+		const signInButton = document.getElementById("signIn");
+		const container = document.getElementById("container");
+	
+		signUpButton.addEventListener("click", () => {
+			container.classList.add("right-panel-active");
+		});
+	
+		signInButton.addEventListener("click", () => {
+			container.classList.remove("right-panel-active");
+		});
+// Visitors counter
+		if (localStorage.getItem("visits") === null) {
+    localStorage.setItem("visits", 1);
+} else {
+    localStorage.setItem("visits", parseInt(localStorage.getItem("visits")) + 1);
+};
+
+document.getElementById("toastView").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show()) 
+}
+	</script>
+	</body>
+</html>
