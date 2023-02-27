@@ -8,7 +8,6 @@
 .lego-brand {
       color: whitesmoke;
       border-radius: 25px;
-      text-align: center;
       font-family: 'Luckiest Guy', cursive;
       font-weight: bolder;
       text-shadow: -6px -6px #4d84c8, -5px -5px #4d84c8,
@@ -296,6 +295,13 @@
 }
 
 /* SERVICES */
+.news-title {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 1.5em;
+      color: rgb(238, 160, 14);
+      text-shadow: 3px 3px 3px white;
+}
+
 .sidebar {
       height: fit-content;
       width: fit-content;
