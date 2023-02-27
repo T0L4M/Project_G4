@@ -1,8 +1,6 @@
 
 #E-Project-2023 - Semester 1
-
 Batch no: T1.2210.M0
-
 Group_4
 
 
@@ -22,8 +20,9 @@ github report link:
 
 ============================
 
-Our website hosted at
+Our website hosted at : https://t0l4m.github.io/Project_G4/
 
 ============================
 
-Thank you for spending your time to look at our work. E-Project-2023
+Thank you for spending your time to look at our work. 
+E-Project-2023
