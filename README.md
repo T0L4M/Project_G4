@@ -10,17 +10,18 @@ Project title: KeansBurg Park
 
 4 collaborators:
 
- - Le Quang Lam     |  ID-Student1429103
- - Le Huy Hoang     |  ID-Student1425325
- - Lu Phat Dat      |  ID-Student1429113
- - Pham Thi Diem My |  ID-Student1429119
-============================
-
-github report link:
+ - Le Quang Lam - Student1429103
+ - Le Huy Hoang - Student1425325
+ - Lu Phat Dat - Student1429113
+ - Pham Thi Diem My - Student1429119
 
 ============================
 
-Our website hosted at : https://t0l4m.github.io/Project_G4/
+github report link: https://github.com/T0L4M/Project_G4/tree/master/documents
+
+============================
+
+Our website hosted at: https://t0l4m.github.io/Project_G4/
 
 ============================
 
