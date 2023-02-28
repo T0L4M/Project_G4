@@ -306,7 +306,7 @@
       height: fit-content;
       width: fit-content;
       position: fixed;
-      z-index: 1;
+      z-index: 2;
       top: 50%;
       left: 0;
       overflow-x: hidden;
