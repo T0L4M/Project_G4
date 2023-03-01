@@ -60,7 +60,7 @@
 		<header>
 			<!-- Nav MENU -->
 			
-				<nav class="navbar navbar-expand-lg" style="background-image: linear-gradient(#FFB7C5, white);">
+				<nav class="navbar navbar-expand-xl" style="background-image: linear-gradient(#FFB7C5, white);">
 					<div class="container-fluid">
 						<a class="navbar-brand fs-3 lego-brand" href="#/!" 
 							>Keansburg Park</a>
@@ -74,15 +74,15 @@
 						>
 							<span class="navbar-toggler-icon"></span>
 						</button>
-
 						<div class="collapse navbar-collapse" id="main_nav">
 							<ul class="navbar-nav">
+								
 								<!-- 1st -->
 								<li class="nav-item dropdown">
 									<a
-										class="nav-link dropdown-toggle"
-										href="#"
-										role="button"
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
 										data-bs-toggle="dropdown"
 										>Rides & Attractions</a
 									>
@@ -129,22 +129,16 @@
 								<li class="nav-item">
 									<a class="nav-link" href="" data-bs-toggle="offcanvas" data-bs-target="#cart"> Cart</a>
 								</li>
-								<li class="nav-item d-none d-xxl-block ms-3" title="Visitors Status">
-									<a href="" id="toastView"><i class="fas fa-users fs-5 text-dark" style="vertical-align: bottom;"></i></a>
+								<li class="nav-item">
+									<div class="alert alert-warning alert-dismissible fade show ps-1 pe-5 py-2 mt-1">
+									<button type="button" class="btn-close pb-2" data-bs-dismiss="alert"></button>
+									<strong>Visitors Stat: </strong><script>document.write(localStorage.getItem("visits"));</script> 
+								    </div>
 								</li>
 							</ul>
 						</div>
 					</div>	
 				</nav>
-				<div class="toast float-end" style="width: fit-content;">
-					<div class="toast-header">
-					  <strong class="me-auto">Visitors Stat</strong>
-					  <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-					</div>
-					<div class="toast-body">
-					  <p>Today's visitors: <script>document.write(localStorage.getItem("visits"));</script></p>
-					</div>
-				    </div>
 		</header>
 		<div class="container-fluid d-none d-xxl-block"> 
 			<marquee behavior="slide" direction="" scrollamount="40">
