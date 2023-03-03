@@ -22,6 +22,18 @@
       font-size: larger;
 }
 
+.viewerStat {
+      background-color: whitesmoke;
+      /* color: whitesmoke; */
+      box-shadow: -6px -6px #4d84c8, -5px -5px #4d84c8,
+            -4px -4px #4d84c8, -3px -3px #4d84c8, -2px -2px #4d84c8,
+            -1px -1px #4d84c8, 1px 1px #4d84c8, 2px 2px #4d84c8,
+            3px 3px #4d84c8, 4px 4px #4d84c8, 5px 5px #4d84c8,
+            6px 6px #4d84c8, 7px 7px #4d84c8, 8px 8px #4d84c8,
+            9px 9px #4d84c8, 10px 10px #4d84c8, 11px 11px #4d84c8;
+
+}
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
